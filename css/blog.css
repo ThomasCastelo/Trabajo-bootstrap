@@ -21,7 +21,22 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
 }
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    align-items: center; /* Centrar los elementos */
+  }
+  
+  h1 {
+    margin-right: 0; /* Elimina el margen a la derecha del h1 */
+    text-align: center; /* Centrar el texto */
+  }
 
+  img {
+    margin-top: 15px; /* Espacio entre la imagen y el h1 */
+    max-width: 80%; /* Puedes reducir el tamaño de la imagen en dispositivos pequeños */
+  }
+}
 /* Pagination */
 .blog-pagination {
   margin-bottom: 4rem;
